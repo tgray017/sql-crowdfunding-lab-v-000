@@ -41,7 +41,7 @@ def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_
 "
 SELECT
   pr.title,
-  SUM(pl.amount) as pledge_total
+  (SUM(pl.amount) - pr.funding_goal) as amount_over_goal
 FROM
   projects pr
   JOIN pledges pl on pr.id = pl.project_id
