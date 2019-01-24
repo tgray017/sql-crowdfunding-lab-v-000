@@ -48,7 +48,7 @@ FROM
 GROUP BY
   pr.title
 HAVING
-  pledge_total >= pr.funding_goal
+  SUM(pl.amount) >= pr.funding_goal
 ORDER BY
   pr.title ASC;
 "
