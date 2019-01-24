@@ -73,13 +73,15 @@ end
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
 "
 SELECT
-  u.name,
+  pr.category,
   SUM(pl.amount) as amount_pledged
 FROM
-  users u
-  JOIN pledges pl on u.id = pl.user_id
+  projects pr
+  JOIN pledges pl on pr.id = pl.project_id
+WHERE
+  pr.category = 'Music'
 GROUP BY
-  u.name
+  pr.category
 ORDER BY
   amount_pledged ASC, 
   u.name ASC;
