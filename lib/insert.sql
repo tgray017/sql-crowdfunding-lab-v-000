@@ -32,5 +32,5 @@ INSERT INTO users (name, age) VALUES
 ("Tom", 26),
 ("Tom", 26),
 ("Tom", 26),
-("Tom", 26),
+("Tom", 26)
 ;
