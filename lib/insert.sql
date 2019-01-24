@@ -9,3 +9,4 @@ INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUE
 ("Project8", "Category4", 5000, "2019-05-01", "2019-09-31"),
 ("Project9", "Category3", 5000, "2019-01-01", "2019-12-31"),
 ("Project10", "Category1", 15000, "2019-01-01", "2019-12-31")
+;
