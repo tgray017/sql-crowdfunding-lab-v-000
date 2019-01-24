@@ -74,14 +74,12 @@ def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_ca
 "
 SELECT
   pr.category,
-  SUM(pl.amount) as amount_pledged
+  pl.amount
 FROM
   projects pr
   JOIN pledges pl on pr.id = pl.project_id
 WHERE
-  pr.category = 'Music'
-GROUP BY
-  pr.category
+  pr.category = 'music'
 "
 end
 
