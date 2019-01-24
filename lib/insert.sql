@@ -14,6 +14,23 @@ INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUE
 
 INSERT INTO users (name, age) VALUES
 ("Tom", 26),
+("Jeff", 27),
+("Steve", 28),
+("Becca", 29),
+("Nate", 26),
+("Amy", 26),
+("Gaston", 26),
+("Bell", 26),
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
 ("Tom", 26),
 ("Tom", 26),
 ;
