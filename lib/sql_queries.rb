@@ -82,9 +82,6 @@ WHERE
   pr.category = 'Music'
 GROUP BY
   pr.category
-ORDER BY
-  amount_pledged ASC, 
-  u.name ASC;
 "
 end
 
