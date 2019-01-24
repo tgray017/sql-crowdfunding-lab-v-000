@@ -15,7 +15,7 @@ FROM
   projects pr
   JOIN pledges pl on pr.id = pl.project_id
 ORDER BY
-  pl.title ASC;
+  pr.title ASC;
 "
 end
 
