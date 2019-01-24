@@ -55,7 +55,19 @@ ORDER BY
 end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount_and_users_name
-"Write your SQL query Here"
+"
+SELECT
+  u.name,
+  SUM(pl.amount) as amount_pledged
+FROM
+  users u
+  JOIN pledges pl on u.id = pl.user_id
+GROUP BY
+  u.name
+ORDER BY
+  amount_pledged DESC, 
+  u.name ASC;
+"
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
