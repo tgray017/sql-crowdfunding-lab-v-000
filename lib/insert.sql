@@ -10,3 +10,10 @@ INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUE
 ("Project9", "Category3", 5000, "2019-01-01", "2019-12-31"),
 ("Project10", "Category1", 15000, "2019-01-01", "2019-12-31")
 ;
+
+
+INSERT INTO users (name, age) VALUES
+("Tom", 26),
+("Tom", 26),
+("Tom", 26),
+;
