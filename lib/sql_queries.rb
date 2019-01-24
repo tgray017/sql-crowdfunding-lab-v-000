@@ -9,8 +9,8 @@
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_name
 "
 SELECT
-  pl.title,
-  pr.amount
+  pr.title,
+  pl.amount
 FROM
   projects pr
   JOIN pledges pl on pr.id = pl.project_id
