@@ -15,7 +15,7 @@ FROM
   projects pr
   JOIN pledges pl on pr.id = pl.project_id
 GROUP BY
-  pr.title
+  1
 ORDER BY
   pr.title ASC;
 "
