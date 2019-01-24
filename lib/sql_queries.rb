@@ -48,7 +48,7 @@ FROM
 GROUP BY
   pr.title
 HAVING
-  amount_over_goal >= pr.funding_goal
+  amount_over_goal >= 0
 ORDER BY
   pr.title ASC;
 "
