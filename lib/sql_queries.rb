@@ -46,7 +46,7 @@ FROM
   projects pr
   JOIN pledges pl on pr.id = pl.project_id
 GROUP BY
-  1
+  pr.title
 HAVING
   pledge_total >= pr.funding_goal
 ORDER BY
