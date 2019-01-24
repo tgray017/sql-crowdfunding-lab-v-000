@@ -84,5 +84,16 @@ WHERE
 end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
-"Write your SQL query Here"
+"
+SELECT
+  pr.category,
+  SUM(pl.amount) as amount_pledged
+FROM
+  projects pr
+  JOIN pledges pl on pr.id = pl.project_id
+WHERE
+  pr.category = 'books'
+GROUP BY
+  pr.category
+"
 end
