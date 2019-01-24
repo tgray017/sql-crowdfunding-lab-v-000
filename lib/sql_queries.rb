@@ -24,15 +24,15 @@ end
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
 "
 SELECT
-  pr.title,
+  u.name,
   SUM(pl.amount) as pledge_total
 FROM
-  projects pr
-  JOIN pledges pl on pr.id = pl.project_id
+  users u
+  JOIN pledges pl on u.id = pl.user_id
 GROUP BY
-  pr.title
+  u.name
 ORDER BY
-  pr.title ASC;
+  u.name ASC;
 "end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
