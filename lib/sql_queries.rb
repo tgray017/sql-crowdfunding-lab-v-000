@@ -15,8 +15,8 @@ FROM
   projects pr
   JOIN pledges pl on pr.id = pl.project_id
 ORDER BY
-  pl.title ASC
-;"
+  pl.title ASC;
+"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
