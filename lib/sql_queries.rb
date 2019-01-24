@@ -65,7 +65,7 @@ FROM
 GROUP BY
   u.name
 ORDER BY
-  amount_pledged DESC, 
+  amount_pledged ASC, 
   u.name ASC;
 "
 end
